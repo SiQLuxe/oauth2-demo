@@ -24,7 +24,4 @@ public class QQRestfulApiProviderController {
     public List<QQAccount> fans(@PathVariable("qq") String qq){
         return InMemoryQQDatabase.database.get(qq).getFans();
     }
-
-
-
 }

@@ -4,7 +4,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
-import lombok.experimental.Accessors;
 
 import java.util.List;
 
@@ -17,7 +16,7 @@ import java.util.List;
 @EqualsAndHashCode(of = "qq")
 @ToString(exclude = "fans")
 @Builder
-public class QQAccount {
+class QQAccount {
 
     private String qq;
     private String nickName;

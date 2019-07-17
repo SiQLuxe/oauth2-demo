@@ -9,9 +9,9 @@ import java.util.Map;
  * company qianmi.com
  * Date 2018-04-25
  */
-public class InMemoryQQDatabase {
+class InMemoryQQDatabase {
 
-    public static Map<String, QQAccount> database;
+    static Map<String, QQAccount> database;
 
     static {
         database = new HashMap<>();
