@@ -86,11 +86,11 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         // @formatter:off
-        http
-            .requestMatchers().anyRequest()
-            .and()
-                .authorizeRequests()
-                .antMatchers("/oauth/**").permitAll();
+//        http
+//            .requestMatchers().anyRequest()
+//            .and()
+//                .authorizeRequests()
+//                .antMatchers("/oauth/**");
         // @formatter:on
     }
 }

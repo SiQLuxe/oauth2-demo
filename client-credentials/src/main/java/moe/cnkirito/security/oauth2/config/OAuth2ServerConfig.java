@@ -76,13 +76,13 @@ public class OAuth2ServerConfig {
                     .authorizedGrantTypes("client_credentials")
                     .scopes("select")
                     .authorities("oauth2")
-                    .secret("123456")
+                    .secret("654321")
                     .and().withClient("client_2")
                     .resourceIds(DEMO_RESOURCE_ID)
                     .authorizedGrantTypes("password", "refresh_token")
                     .scopes("select")
                     .authorities("oauth2")
-                    .secret("123456");
+                    .secret("654321");
         }
 
         @Override

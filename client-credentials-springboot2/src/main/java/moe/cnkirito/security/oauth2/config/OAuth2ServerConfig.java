@@ -95,7 +95,5 @@ public class OAuth2ServerConfig {
             //允许表单认证
             oauthServer.allowFormAuthenticationForClients();
         }
-
     }
-
 }

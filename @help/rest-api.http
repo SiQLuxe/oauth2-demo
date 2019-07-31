@@ -1,3 +1,24 @@
 GET http://localhost:8080/oauth/token?username=user_1&password=123456&grant_type=password&scope=select&client_id=client_2&client_secret=654321
 
 ###
+GET http://localhost:8080/oauth/token?grant_type=client_credentials&scope=select&client_id=client_1&client_secret=654321
+# client_id,client_secret,scope,grant_type,
+###
+GET http://localhost:8080/oauth/token?client_id=client_1&client_secret=654321&scope=select&grant_type=client_credentials
+###
+
+GET http://localhost:8080/order/1
+###
+GET http://localhost:8080/order/1?access_token=159d70c0-e01b-4e84-837d-92cba1e89679
+###
+GET http://localhost:8080/order/1?access_token=6398573a-fc47-4217-8ee6-4e6b51ff5917
+###
+GET http://localhost:8080/product/1
+
+###
+GET http://localhost:8080/qq/info/250577914/
+###
+GET http://localhost:8080/oauth/authorize?client_id=aiqiyi&response_type=code&redirect_uri=http://localhost:8081/aiqiyi/qq/redirect
+###
+GET http://localhost:8080/qq/info/250577914?access_token=deb8be67-5748-4e9d-903c-f16cb27bb44c
+###
